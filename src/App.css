@@ -1,0 +1,54 @@
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.buckets-container {
+  display: flex;
+}
+
+.bucket {
+  position: relative;
+  width: 200px;
+  height: 300px;
+  border: 2px solid black;
+  margin: 20px;
+  overflow: hidden;
+}
+
+.water {
+  background-color: blue;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: height 0.5s ease;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.add-water-btn,
+.empty-tank-btn {
+  margin-top: 5px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.add-water-btn {
+  background-color: green;
+  color: white;
+  border: none;
+}
+
+.empty-tank-btn {
+  background-color: red;
+  color: white;
+  border: none;
+}
